@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Poppins:wght@400;500;700&display=swap");
+@import "node_modules/@tabler/icons-webfont/tabler-icons.scss";
+
+:root {
+  --blanco: #eff5f5;
+  --negro: #181823;
+  --azul: #00425a;
+  --verde: #1f8a70;
+  --naranja: #fc7300;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.boton {
+  background-color: #1f8a70;
+  color: #eff5f5;
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 12pt;
+}
+
+.boton:hover {
+  background-color: #fc7300;
+}
+
+/* PANTALLA CELULAR */
+@media screen and (min-width: 320px) {
+  .menuprincipal {
+    background-color: #eff5f5;
+    padding: 20px 30px 20px 30px;
+  }
+
+  .inscripcion {
+    background-color: #00425a;
+    color: #eff5f5;
+    padding: 100px 30px 100px 30px;
+    text-align: center;
+  }
+
+  #quienessomos {
+    padding: 80px 30px 80px 30px;
+  }
+
+  #porqueelegirnos {
+    padding: 80px 30px 80px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .item1 {
+    text-align: center;
+    margin-bottom: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .item2 {
+    display: grid;
+    grid-column-start: 2;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #propuestaeducativa {
+    background-color: #eff5f5;
+    padding: 80px 30px 80px 30px;
+    gap: 30px;
+    display: grid;
+
+    
+  }
+
+
+  #ultimasnoticias {
+    padding: 80px 30px 80px 30px;
+    gap: 30px;
+  }
+
+  .formulario {
+    padding: 30px 30px 30px 30px;
+    display: grid;
+    gap: 10px;
+  }
+
+  footer {
+    background-color: #181823;
+    padding: 45px 50px 65px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+}
+
+/* PANTALLA TABLET */
+@media screen and (min-width: 768px) {
+  .menuprincipal {
+    background-color: #eff5f5;
+    padding: 20px 50px 20px 50px;
+  }
+
+  .inscripcion {
+    background-color: #00425a;
+    color: #eff5f5;
+    padding: 110px 110px 110px 110px;
+    text-align: center;
+  }
+
+  #quienessomos {
+    padding: 110px 100px 110px 50px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 50px;
+    grid-template-columns: 40% 60%;
+  }
+
+  #porqueelegirnos {
+    padding: 110px 110px 110px 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .item1 {
+    text-align: center;
+    margin-bottom: 20px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .item2 {
+    display: grid;
+    grid-column-start: 2;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #propuestaeducativa {
+    background-color: #eff5f5;
+    display: flex;
+    justify-content: space-between;
+    padding: 110px 50px 110px 50px;
+    gap: 20px;
+  }
+
+  #ultimasnoticias {
+    padding: 110px 50px 110px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .formulario {
+    padding: 50px 50px 80px 50px;
+    display: grid;
+    gap: 10px;
+  }
+
+  footer {
+    padding: 45px 50px 65px 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #181823;
+  }
+}
+
+/* PANTALLA COMPUTADORA */
+@media screen and (min-width: 1200px) {
+  .menuprincipal {
+    background-color: #eff5f5;
+    padding: 15px 110px 15px 110px;
+    background-color: #eff5f5;
+    position: sticky;
+  }
+
+  .inscripcion {
+    background-color: #00425a;
+    color: #eff5f5;
+    padding: 110px 150px 110px 150px;
+    text-align: center;
+  }
+
+  #quienessomos {
+    padding: 110px 110px 110px 110px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 50px;
+    grid-template-columns: 40% 60%;
+  }
+
+  #porqueelegirnos {
+    padding: 110px 110px 110px 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .item1 {
+    text-align: center;
+    margin-bottom: 20px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .item2 {
+    display: grid;
+    grid-column-start: 2;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #propuestaeducativa {
+    background-color: #eff5f5;
+    display: flex;
+    justify-content: space-between;
+    padding: 110px 110px 110px 110px;
+    gap: 30px;
+  }
+
+
+  #ultimasnoticias {
+    padding: 110px 110px 110px 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .formulario {
+    padding: 50px 110px 50px 110px;
+    display: grid;
+    gap: 10px;
+  }
+
+  footer {
+    padding: 45px 110px 65px 110px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #181823;
+  }
+
+
+}
+
+header {
+    position: sticky;
+    top: 0%;
+}
+
+.menuprincipal {
+  background-color: #eff5f5;
+  display: flex;
+  justify-content: space-between;
+}
+
+#carouselExample {
+    z-index: -1;
+}
+
+.logomenu {
+  margin-top: 10px;
+}
+
+.navbar navbar-expand-lg bg-body-tertiary {
+  background-color: #eff5f5;
+  font: "Poppins", sans-serif;
+  color: #181823;
+
+}
+
+.container-fluid {
+  background-color: #eff5f5;
+}
+
+.navbar-toggler {
+  background-color: #eff5f5;
+}
+.navbar-nav {
+  background-color: #eff5f5;
+  color: #181823;
+}
+
+.collapse navbar-collapse {
+    align-content: right;
+}
+
+.carouselExample {
+  height: 100%;
+}
+
+#quienessomos {
+  background-color: #eff5f5;
+}
+
+.h1quienes {
+  margin-bottom: 30px;
+}
+
+.clase {
+  border-radius: 20px;
+}
+
+#porqueelegirnos {
+  background-color: #00425a;
+  color: #eff5f5;
+  align-content: center;
+  text-align: center;
+}
+
+
+.cuadronoticias {
+  border-color: #fc7300;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2%;
+  padding: 25px;
+}
+
+.socialmedia li {
+  display: flex;
+  justify-content: space-between;
+  color: #eff5f5;
+}
+
+.socialmedia li ul a i {
+  color: #eff5f5;
+}
+
+.socialmedia li ul a i:hover {
+  color: #fc7300;
+}
+
+.contacto {
+  font: "Poppins", sans-serif;
+  color: #eff5f5;
+}
+
+
+.header-contacto {
+    background-color: #181823;
+    color: #eff5f5;
+    padding: 50px 110px 50px 110px;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.contactanos {
+background-color: #00425a;
+color: #eff5f5;
+text-align: center;
+padding: 50px 110px 50px 110px;
+}
+
+
+#campo {
+  border-color: #fc7300;
+ border: 2px;
+ border-radius: 50px;
+ padding: 10px;
+}
+
+#enviar {
+  background-color: #1f8a70;
+  color: #eff5f5;
+ border: 2px;
+ border-radius: 50px;
+ padding: 10px;
+ margin-top: 20px;
+}
+
+.pie {
+  font-weight: 400;
+  font-size: 13px;
+}
